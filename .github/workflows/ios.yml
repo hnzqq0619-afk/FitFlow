@@ -50,3 +50,34 @@ jobs:
             build/FitFlow-simulator.zip
           if-no-files-found: ignore
           retention-days: 7
+
+  device-ipa:
+    runs-on: macos-26
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show available toolchain
+        run: xcodebuild -version
+      - name: Build unsigned iPhone app
+        run: |
+          xcodebuild -project FitFlow.xcodeproj -scheme FitFlow \
+            -configuration Release -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build/DeviceData \
+            ARCHS=arm64 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            build 2>&1 | tee device-build.log
+      - name: Package unsigned IPA
+        run: bash scripts/package-ipa.sh
+      - name: Verify IPA contains an iPhone device binary
+        run: python3 scripts/verify-ipa.py build/FitFlow-unsigned.ipa | tee ipa-verification.log
+      - name: Upload unsigned iPhone IPA and logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: FitFlow-iPhone-unsigned-${{ github.sha }}
+          path: |
+            build/FitFlow-unsigned.ipa
+            device-build.log
+            ipa-verification.log
+          if-no-files-found: ignore
+          retention-days: 7
