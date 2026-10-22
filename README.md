@@ -2,7 +2,7 @@
 
 基于 [enginbolat/FitFlow](https://github.com/enginbolat/FitFlow) 的本地改进版，复用 SwiftUI 导航、计划卡片和详情页面。
 
-**当前验证状态：已在 Windows 进行静态检查；尚未在 macOS/Xcode 编译、运行 XCTest、验证真机或联调真实 Gemini。** 配置了后续自动构建流程，不代表该流程已经执行成功。
+**已在 GitHub macOS 云端通过 21 项核心测试及 iOS 模拟器编译。** [首次成功构建日志和产物](https://github.com/hnzqq0619-afk/FitFlow/actions/runs/39762953338)。后续提交请以 Actions 状态为准；尚未验证真机或联调真实 Gemini。
 
 ## 已实现的代码
 
@@ -50,7 +50,7 @@
 
 根目录 Package.swift 只用于核心库测试；App 仍从 FitFlow.xcodeproj 构建。
 
-GitHub Actions 配置在 .github/workflows/ios.yml：运行静态检查、核心测试和无签名模拟器构建。文件需要先提交到你自己的 GitHub 仓库才会触发；当前没有推送或执行远程构建。该流程不生成可直接安装到 iPhone 的签名包。
+GitHub Actions 配置在 .github/workflows/ios.yml：代码推送到 main 后运行静态检查、核心测试和无签名模拟器构建。代码已发布至 [hnzqq0619-afk/FitFlow](https://github.com/hnzqq0619-afk/FitFlow)，并完成首次成功构建。每次运行上传测试日志、编译日志，成功时包含 FitFlow-simulator.zip，保留七天。该流程不生成可直接安装到 iPhone 的签名包。
 
 ## 真机签名与配置
 

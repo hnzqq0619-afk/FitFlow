@@ -8,7 +8,16 @@
 - 使用 PowerShell XML 解析健康权限文件和共享 Scheme：通过。
 - git diff --check：通过。
 
-这些结果只代表对应静态检查。**没有执行 swift test、xcodebuild、模拟器、真机或真实 Gemini 调用。** GitHub Actions 文件已创建，但尚未推送或触发。
+以上为 Windows 静态检查结果。随后已发布代码，并在 GitHub macOS 环境实际执行 swift test 和 xcodebuild：
+
+- 首次成功运行：https://github.com/hnzqq0619-afk/FitFlow/actions/runs/39762953338
+- 验证提交：21fa6ef79fa748fde0a2c0ca8fafa9cc8009d27f
+- 工具链：Xcode 26.6、Apple Swift 6.3.3。
+- 核心测试：Executed 21 tests, with 0 failures。
+- iOS 模拟器编译：BUILD SUCCEEDED。
+- 模拟器 App 和日志已上传到该次运行的 Artifacts，保留七天。
+
+首次构建发现的 HealthKit totalEnergyBurned 弃用警告已改用 statistics(for:)；后续提交以对应 Actions 日志为准。尚未启动模拟器进行界面操作、进行真机测试或调用真实 Gemini。
 
 ## 核心自动测试
 
@@ -20,7 +29,7 @@ macOS 上执行 swift test。测试使用固定虚构 JSON 和 URLProtocol 模�
 | Tests/FitFlowCoreTests/RepositoryTests.swift | 历史计划和资料重启恢复、完整 ID 避免碰撞、撤销、未来训练拒绝、损坏存档保留、写入失败不更新内存、旧计划迁移、体重来源去重 |
 | Tests/FitFlowCoreTests/GeminiTests.swift | 同意开关、数据最少发送、REST 请求头和 schema、缺密钥不请求、429 与截断响应 |
 
-这些测试的代码已添加，运行结果仍待 macOS 验证。CI 还会单独构建 iPhone 模拟器 App，覆盖核心包未包含的 SwiftUI／HealthKit 集成代码。
+这些测试已在上述 macOS 运行中全部通过。CI 还构建 iPhone 模拟器 App，验证核心包未包含的 SwiftUI／HealthKit 集成代码；界面行为仍需按下面的人工清单验证。
 
 ## 模拟器人工检查
 

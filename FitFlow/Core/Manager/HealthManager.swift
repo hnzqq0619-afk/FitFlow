@@ -112,7 +112,7 @@ final class HealthManager: ObservableObject, HealthStoreProtocol {
             }
             todayActivityLogs = workouts.sorted { $0.startDate > $1.startDate }.map {
                 ActivityLog(originalType: $0.workoutActivityType, activityName: $0.workoutActivityType.displayName,
-                            calorieAmount: $0.totalEnergyBurned?.doubleValue(for: .kilocalorie()) ?? 0,
+                            calorieAmount: $0.statistics(for: self.energyType)?.sumQuantity()?.doubleValue(for: .kilocalorie()) ?? 0,
                             duration: $0.duration / 60, date: $0.startDate)
             }
             todayWorkoutCount = workouts.isEmpty ? nil : workouts.count
