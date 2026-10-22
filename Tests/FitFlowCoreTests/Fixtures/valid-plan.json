@@ -1,0 +1,402 @@
+{
+  "weekly_focus": "测试用周计划",
+  "nutrition_advice": "测试数据，不是饮食建议",
+  "meal_plan": {
+    "daily_meal_plans": [
+      {
+        "day_index": 1,
+        "day": "2026-10-22",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 2,
+        "day": "2026-10-23",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 3,
+        "day": "2026-10-24",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 4,
+        "day": "2026-10-25",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 5,
+        "day": "2026-10-26",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 6,
+        "day": "2026-10-27",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      },
+      {
+        "day_index": 7,
+        "day": "2026-10-28",
+        "meals": [
+          {
+            "meal_type": "早餐",
+            "name": "测试餐 早餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          },
+          {
+            "meal_type": "午餐",
+            "name": "测试餐 午餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "外卖",
+            "order_notes": "测试点单备注"
+          },
+          {
+            "meal_type": "晚餐",
+            "name": "测试餐 晚餐",
+            "description": "测试数据，不是饮食建议。",
+            "calories": 600,
+            "protein": 40,
+            "carbs": 65,
+            "fat": 20,
+            "video_url": null,
+            "portion": "测试份量",
+            "source": "自制",
+            "order_notes": ""
+          }
+        ]
+      }
+    ]
+  },
+  "daily_plan": [
+    {
+      "day_index": 1,
+      "day": "2026-10-22",
+      "title": "测试训练",
+      "is_rest_day": false,
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "测试动作",
+          "sets": "3",
+          "reps": "10",
+          "video_url": null
+        }
+      ]
+    },
+    {
+      "day_index": 2,
+      "day": "2026-10-23",
+      "title": "休息",
+      "is_rest_day": true,
+      "duration_minutes": 0,
+      "exercises": []
+    },
+    {
+      "day_index": 3,
+      "day": "2026-10-24",
+      "title": "测试训练",
+      "is_rest_day": false,
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "测试动作",
+          "sets": "3",
+          "reps": "10",
+          "video_url": null
+        }
+      ]
+    },
+    {
+      "day_index": 4,
+      "day": "2026-10-25",
+      "title": "休息",
+      "is_rest_day": true,
+      "duration_minutes": 0,
+      "exercises": []
+    },
+    {
+      "day_index": 5,
+      "day": "2026-10-26",
+      "title": "测试训练",
+      "is_rest_day": false,
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "测试动作",
+          "sets": "3",
+          "reps": "10",
+          "video_url": null
+        }
+      ]
+    },
+    {
+      "day_index": 6,
+      "day": "2026-10-27",
+      "title": "休息",
+      "is_rest_day": true,
+      "duration_minutes": 0,
+      "exercises": []
+    },
+    {
+      "day_index": 7,
+      "day": "2026-10-28",
+      "title": "休息",
+      "is_rest_day": true,
+      "duration_minutes": 0,
+      "exercises": []
+    }
+  ]
+}

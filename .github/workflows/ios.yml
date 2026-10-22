@@ -1,0 +1,52 @@
+name: iOS checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  core-and-app:
+    runs-on: macos-26
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show available toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+      - name: Check repository configuration
+        run: node scripts/check-project.mjs
+      - name: Run core tests without API credentials
+        run: swift test 2>&1 | tee core-tests.log
+      - name: Build iPhone simulator app without signing
+        if: ${{ !cancelled() }}
+        run: |
+          xcodebuild -project FitFlow.xcodeproj -scheme FitFlow \
+            -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO build 2>&1 | tee ios-build.log
+      - name: Package simulator app
+        if: ${{ !cancelled() && hashFiles('build/DerivedData/Build/Products/Debug-iphonesimulator/FitFlow.app/Info.plist') != '' }}
+        run: >-
+          ditto -c -k --sequesterRsrc --keepParent
+          build/DerivedData/Build/Products/Debug-iphonesimulator/FitFlow.app
+          build/FitFlow-simulator.zip
+      - name: Upload build logs and simulator artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: FitFlow-build-${{ github.sha }}
+          path: |
+            core-tests.log
+            ios-build.log
+            build/FitFlow-simulator.zip
+          if-no-files-found: ignore
+          retention-days: 7

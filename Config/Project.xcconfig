@@ -1,0 +1,4 @@
+// Public defaults. Override signing in an ignored Local.xcconfig.
+PRODUCT_BUNDLE_IDENTIFIER = com.personal.fitflow
+DEVELOPMENT_TEAM =
+#include? "Local.xcconfig"
